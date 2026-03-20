@@ -16,7 +16,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [u S423 `S424 1 `uc 1 ]
 [n S423 . . all_flags ]
 "88
-[; ;F150.c: 88:       lampState.mode = eUndefined;
+[; ;F150.c: 88:       lampState.mode = eOFF_DRL;
 [c E2897 0 1 2 3 4 5 .. ]
 [n E2897 . eOFF_DRL ePOS eAUTO_DRL eAUTO_LOBEAM_POS eLOBEAM eUndefined  ]
 "14 ./gpio.h
@@ -524,8 +524,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;F150.c: 87:       case 0x11:
 [e :U 431 ]
 "88
-[; ;F150.c: 88:       lampState.mode = eUndefined;
-[e = . . _lampState 0 0 -> . `E2897 5 `uc ]
+[; ;F150.c: 88:       lampState.mode = eOFF_DRL;
+[e = . . _lampState 0 0 -> . `E2897 0 `uc ]
 "89
 [; ;F150.c: 89:       lampFlags.all_flags = 0;
 [e = . _lampFlags 1 -> -> 0 `i `uc ]

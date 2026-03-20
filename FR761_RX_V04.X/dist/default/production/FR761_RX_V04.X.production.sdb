@@ -63,7 +63,7 @@ ERROR 2
 [e E3343 . `uc
 SIGNAL 1
 ]
-"86 D:\yiming\00work\FR761_RX_V04.X\main.c
+"64 D:\yiming\00work\FR761_RX_V04.X\main.c
 [e E38 . `uc
 LIN_RX_IDLE 0
 LIN_RX_BREAK 1
@@ -113,7 +113,7 @@ eUndefined 5
 [v _POS_ON POS_ON `(v  1 e 1 0 ]
 "36
 [v _POS_OFF POS_OFF `(v  1 e 1 0 ]
-"70 D:\yiming\00work\FR761_RX_V04.X\main.c
+"48 D:\yiming\00work\FR761_RX_V04.X\main.c
 [v _main main `(i  1 e 2 0 ]
 "88 D:\yiming\00work\FR761_RX_V04.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
@@ -458,10 +458,10 @@ eUndefined 5
 [v _CountCallBack CountCallBack `VEuc  1 s 1 CountCallBack ]
 "59 D:\yiming\00work\FR761_RX_V04.X\mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"70 D:\yiming\00work\FR761_RX_V04.X\main.c
+"48 D:\yiming\00work\FR761_RX_V04.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"90
+"68
 } 0
 "40 D:\yiming\00work\FR761_RX_V04.X\func_main.c
 [v _software_Initialize software_Initialize `(v  1 e 1 0 ]

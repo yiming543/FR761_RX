@@ -4838,7 +4838,7 @@ void func_F150(void) {
   if (tempRxData[0] == 0x24) {
     switch (tempRxData[2]) {
       case 0x11:
-      lampState.mode = eUndefined;
+      lampState.mode = eOFF_DRL;
       lampFlags.all_flags = 0;
       break;
     case 0x49:
