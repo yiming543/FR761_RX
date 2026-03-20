@@ -1,0 +1,74 @@
+[
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\F150.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\F150.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\F150.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\F150.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\func_main.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\func_main.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\func_main.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\func_main.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\gpio.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\gpio.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\gpio.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\gpio.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\main.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\main.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\main.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\main.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_app.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_app.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_app.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_app.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_slave.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_slave.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_slave.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\LINDrivers\\lin_slave.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\device_config.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\device_config.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\device_config.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\device_config.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\eusart1.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\eusart1.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\eusart1.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\eusart1.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\interrupt_manager.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\interrupt_manager.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\interrupt_manager.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\interrupt_manager.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\mcc.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\mcc.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\mcc.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\mcc.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\pin_manager.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\pin_manager.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\pin_manager.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\pin_manager.c.p1"
+},
+{
+  "directory": "D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -ID:\\yiming\\00work\\FR761_RX_V02.X\\cmake\\FR761_RX\\default\\..\\..\\.. -c -mcpu=16F15213 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\tmr0.c.p1 -c D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\tmr0.c",
+  "file": "D:\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\tmr0.c",
+  "output": "CMakeFiles\\FR761_RX_default_default_XC8_compile.dir\\D_\\yiming\\00work\\FR761_RX_V02.X\\mcc_generated_files\\tmr0.c.p1"
+}
+]

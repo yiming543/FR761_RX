@@ -1,21 +1,26 @@
 /**
-  Generated Main Source File
+  Generated Pin Manager File
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    main.c
+    pin_manager.c
 
   Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+    This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
   Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+    This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F15213
-        Driver Version    :  2.00
+        Driver Version    :  2.11
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above
+        MPLAB             :  MPLAB X 6.00
+
+    Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
 */
 
 /*
@@ -41,49 +46,63 @@
     SOFTWARE.
 */
 
-//20251114 V01 CS:3EFF
-//輸出:HiBeam/DRL/POS
-
-//20251217 V02 CS:C5DF
-//修正接收功能.
-//新增LED OFF信號.
-
-#include "mcc_generated_files/mcc.h"
-#include "mcc_generated_files/LINDrivers/lin_slave.h"
+#include "pin_manager.h"
 
 
-/*
-                         Main application
- */
-void main(void)
+
+
+
+void PIN_MANAGER_Initialize(void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
+    /**
+    LATx registers
+    */
+    LATA = 0x00;
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
+    /**
+    TRISx registers
+    */
+    TRISA = 0x0C;
 
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
+    /**
+    ANSELx registers
+    */
+    ANSELA = 0x00;
 
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
+    /**
+    WPUx registers
+    */
+    WPUA = 0x00;
 
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
+    /**
+    ODx registers
+    */
+    ODCONA = 0x00;
 
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
+    /**
+    SLRCONx registers
+    */
+    SLRCONA = 0x37;
 
-    while (1)
-    {
-        // Add your application code
-        LIN_handler();
-               
-                
-                
-    }
+    /**
+    INLVLx registers
+    */
+    INLVLA = 0x3F;
+
+
+
+
+
+   
+    
+	
+    RX1PPS = 0x02;   //RA2->EUSART1:RX1;    
 }
+  
+void PIN_MANAGER_IOC(void)
+{   
+}
+
 /**
  End of File
 */

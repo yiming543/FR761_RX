@@ -1,21 +1,26 @@
 /**
-  Generated Main Source File
+  Generated Interrupt Manager Source File
 
-  Company:
+  @Company:
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name:
+    interrupt_manager.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary:
+    This is the Interrupt Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description:
+    This header file provides implementations for global interrupt handling.
+    For individual peripheral handlers please see the peripheral driver for
+    all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F15213
-        Driver Version    :  2.00
+        Driver Version    :  2.04
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above or later
+        MPLAB 	          :  MPLAB X 6.00
 */
 
 /*
@@ -41,47 +46,34 @@
     SOFTWARE.
 */
 
-//20251114 V01 CS:3EFF
-//輸出:HiBeam/DRL/POS
+#include "interrupt_manager.h"
+#include "mcc.h"
 
-//20251217 V02 CS:C5DF
-//修正接收功能.
-//新增LED OFF信號.
-
-#include "mcc_generated_files/mcc.h"
-#include "mcc_generated_files/LINDrivers/lin_slave.h"
-
-
-/*
-                         Main application
- */
-void main(void)
+void __interrupt() INTERRUPT_InterruptManager (void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
-
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
-    while (1)
+    // interrupt handler
+    if(PIE0bits.TMR0IE == 1 && PIR0bits.TMR0IF == 1)
     {
-        // Add your application code
-        LIN_handler();
-               
-                
-                
+        TMR0_ISR();
+    }
+    else if(INTCONbits.PEIE == 1)
+    {
+        if(PIE1bits.TX1IE == 1 && PIR1bits.TX1IF == 1)
+        {
+            EUSART1_TxDefaultInterruptHandler();
+        } 
+        else if(PIE1bits.RC1IE == 1 && PIR1bits.RC1IF == 1)
+        {
+            EUSART1_RxDefaultInterruptHandler();
+        } 
+        else
+        {
+            //Unhandled Interrupt
+        }
+    }      
+    else
+    {
+        //Unhandled Interrupt
     }
 }
 /**

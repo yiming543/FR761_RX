@@ -1,0 +1,340 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"54 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 54: const lin_rx_cmd_t scheduleTable[] = {
+[c E48 0 1 2 .. ]
+[n E48 . TRANSMIT RECEIVE ERROR  ]
+"83 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h: 83: typedef struct {
+[s S3 `uc 1 `E48 1 `uc 1 `*uc 1 ]
+[n S3 . cmd type length data ]
+"54 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 54: const lin_rx_cmd_t scheduleTable[] = {
+[c E124 1 .. ]
+[n E124 . SIGNAL  ]
+"28 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../F150.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../F150.h: 28:     struct {
+[s S9 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S9 . mode OverTaking TurnLeft TurnRight HighBeam ]
+"27
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../F150.h: 27: typedef union {
+[u S8 `S9 1 `uc 1 ]
+[n S8 . . all_flags ]
+"14
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../F150.h: 14:   struct {
+[s S7 :1 `a 1 :1 `a 1 :1 `a 1 :1 `a 1 :1 `a 1 :1 `a 1 :1 `a 1 :1 `a 1 ]
+[n S7 . fDRL fPOS fLOBEAM fHIBEAM LoBeam fLEFT fRIGHT b7 ]
+"13
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../F150.h: 13: typedef union {
+[u S6 `S7 1 `uc 1 ]
+[n S6 . . all_flags ]
+[v F88 `*CS3 ~T0 @X0 1 t ]
+[v F89 `(v ~T0 @X0 0 tf ]
+"105 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h: 105: void LIN_init(uint8_t tableLength, const lin_rx_cmd_t* const command, void (*processData)(void));
+[v _LIN_init `(v ~T0 @X0 0 ef3`uc`C*CS3`*F89 ]
+"62 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 62: void processLIN(void);
+[v _processLIN `(v ~T0 @X0 0 ef ]
+"111 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_slave.h: 111: uint8_t LIN_getPacket(uint8_t* data);
+[v _LIN_getPacket `(uc ~T0 @X0 0 ef1`*uc ]
+"33 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 33: extern void DRL_ON(void);
+[v _DRL_ON `(v ~T0 @X0 0 ef ]
+"34
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 34: extern void DRL_OFF(void);
+[v _DRL_OFF `(v ~T0 @X0 0 ef ]
+"35
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 35: extern void POS_ON(void);
+[v _POS_ON `(v ~T0 @X0 0 ef ]
+"36
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 36: extern void POS_OFF(void);
+[v _POS_OFF `(v ~T0 @X0 0 ef ]
+"29
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 29: extern void HiBeam_ON(void);
+[v _HiBeam_ON `(v ~T0 @X0 0 ef ]
+"30
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/../../gpio.h: 30: extern void HiBeam_OFF(void);
+[v _HiBeam_OFF `(v ~T0 @X0 0 ef ]
+"48 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 48: uint8_t SIGNAL_Data[8];
+[v _SIGNAL_Data `uc ~T0 @X0 -> 8 `i e ]
+"54
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 54: const lin_rx_cmd_t scheduleTable[] = {
+[v _scheduleTable `CS3 ~T0 @X0 -> -> 1 `i `ux e ]
+[i _scheduleTable
+:U ..
+:U ..
+-> . `E124 0 `uc
+. `E48 1
+-> -> 8 `i `uc
+&U _SIGNAL_Data
+..
+..
+]
+"48 D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 48: LampState_t lampState = {0};
+[v _lampState `S8 ~T0 @X0 1 e ]
+[i _lampState
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+..
+..
+..
+..
+]
+"49
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 49: LampFlags_t lampFlags_old = {0};
+[v _lampFlags_old `S6 ~T0 @X0 1 e ]
+[i _lampFlags_old
+:U 0
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `a
+..
+..
+..
+..
+]
+"51
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 51: void LIN_Slave_Initialize(void) {
+[v _LIN_Slave_Initialize `(v ~T0 @X0 1 ef ]
+{
+[e :U _LIN_Slave_Initialize ]
+[f ]
+"52
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 52:   LIN_init((sizeof(scheduleTable)/sizeof(lin_rx_cmd_t)), scheduleTable, processLIN);
+[e ( _LIN_init (3 , , -> / -> # _scheduleTable `ui -> # `S3 `ui `uc &U _scheduleTable &U _processLIN ]
+"53
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 53: }
+[e :UE 10 ]
+}
+"55
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 55: void processLIN(void) {
+[v _processLIN `(v ~T0 @X0 1 ef ]
+{
+[e :U _processLIN ]
+[f ]
+[v F171 `S6 ~T0 @X0 1 s ]
+[i F171
+:U 0
+:U ..
+:U ..
+:U ..
+"56
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 56:   LampFlags_t lampFlags = {0};
+-> -> 0 `i `a
+..
+..
+..
+..
+]
+[v _lampFlags `S6 ~T0 @X0 1 a ]
+[e = _lampFlags F171 ]
+"57
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 57:   uint8_t tempRxData[8];
+[v _tempRxData `uc ~T0 @X0 -> 8 `i a ]
+"58
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 58:   uint8_t cmd;
+[v _cmd `uc ~T0 @X0 1 a ]
+"60
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 60:   cmd = LIN_getPacket(tempRxData);
+[e = _cmd ( _LIN_getPacket (1 &U _tempRxData ]
+"62
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 62:   lampFlags.all_flags = lampFlags_old.all_flags;
+[e = . _lampFlags 1 . _lampFlags_old 1 ]
+"64
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 64:   switch (cmd) {
+[e $U 13  ]
+{
+"65
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 65:   case SIGNAL:
+[e :U 14 ]
+"91
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 91:     if (tempRxData[0] == 0x24) {
+[e $ ! == -> *U + &U _tempRxData * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 36 `i 15  ]
+{
+"94
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 94:       if ((tempRxData[1] & 0B10000000) == 0B10000000 || (tempRxData[1] & 0B01000000) == 0B01000000){
+[e $ ! || == & -> *U + &U _tempRxData * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 128 `i -> 128 `i == & -> *U + &U _tempRxData * -> -> -> 1 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 64 `i -> 64 `i 16  ]
+{
+"95
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 95:         lampState.OverTaking = 1;
+[e = . . _lampState 0 1 -> -> 1 `i `uc ]
+"96
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 96:         lampFlags.fHIBEAM = 1;
+[e = . . _lampFlags 0 3 -> -> 1 `i `a ]
+"97
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 97:       }else{
+}
+[e $U 17  ]
+[e :U 16 ]
+{
+"98
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 98:         lampState.OverTaking = 0;
+[e = . . _lampState 0 1 -> -> 0 `i `uc ]
+"99
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 99:         lampFlags.fHIBEAM = 0;
+[e = . . _lampFlags 0 3 -> -> 0 `i `a ]
+"100
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 100:       }
+}
+[e :U 17 ]
+"127
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 127:       if (((tempRxData[2] & 0B01000000) == 0B01000000) &&
+[e $ ! && == & -> *U + &U _tempRxData * -> -> -> 2 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 64 `i -> 64 `i == & -> *U + &U _tempRxData * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 7 `i -> 7 `i 18  ]
+"128
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 128:           ((tempRxData[4] & 0B00000111) == 0B00000111)) {
+{
+"129
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 129:         lampFlags.fDRL = 1;
+[e = . . _lampFlags 0 0 -> -> 1 `i `a ]
+"130
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 130:       }else {
+}
+[e $U 19  ]
+[e :U 18 ]
+{
+"131
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 131:         lampFlags.fDRL = 0;
+[e = . . _lampFlags 0 0 -> -> 0 `i `a ]
+"132
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 132:       }
+}
+[e :U 19 ]
+"136
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 136:       if (((tempRxData[5] & 0B00100000) == 0B00100000) &&
+[e $ ! && == & -> *U + &U _tempRxData * -> -> -> 5 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 32 `i -> 32 `i == & -> *U + &U _tempRxData * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 7 `i -> 7 `i 20  ]
+"137
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 137:           ((tempRxData[4] & 0B00000111) == 0B00000111)) {
+{
+"138
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 138:         lampFlags.fPOS = 1;
+[e = . . _lampFlags 0 1 -> -> 1 `i `a ]
+"139
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 139:       }else{
+}
+[e $U 21  ]
+[e :U 20 ]
+{
+"140
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 140:         lampFlags.fPOS = 0;
+[e = . . _lampFlags 0 1 -> -> 0 `i `a ]
+"141
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 141:       }
+}
+[e :U 21 ]
+"143
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 143:     } else if (tempRxData[0] == 0x01) {
+}
+[e $U 22  ]
+[e :U 15 ]
+[e $ ! == -> *U + &U _tempRxData * -> -> -> 0 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 1 `i 23  ]
+{
+"144
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 144:       if ((tempRxData[4] & 0B00000111) == 0B00000111) {
+[e $ ! == & -> *U + &U _tempRxData * -> -> -> 4 `i `ui `ux -> -> # *U &U _tempRxData `ui `ux `i -> 7 `i -> 7 `i 24  ]
+{
+"145
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 145:         lampState.all_flags = 0;
+[e = . _lampState 1 -> -> 0 `i `uc ]
+"146
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 146:         lampFlags.all_flags = 0;
+[e = . _lampFlags 1 -> -> 0 `i `uc ]
+"147
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 147:       }
+}
+[e :U 24 ]
+"148
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 148:     }
+}
+[e :U 23 ]
+[e :U 22 ]
+"149
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 149:     break;
+[e $U 12  ]
+"151
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 151:   default:
+[e :U 25 ]
+"154
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 154:     break;
+[e $U 12  ]
+"155
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 155:   }
+}
+[e $U 12  ]
+[e :U 13 ]
+[e [\ _cmd , $ . `E124 0 14
+ 25 ]
+[e :U 12 ]
+"159
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 159:   if (lampFlags.fDRL) {
+[e $ ! != -> . . _lampFlags 0 0 `i -> 0 `i 26  ]
+{
+"160
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 160:     DRL_ON();
+[e ( _DRL_ON ..  ]
+"161
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 161:   } else {
+}
+[e $U 27  ]
+[e :U 26 ]
+{
+"162
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 162:     DRL_OFF();
+[e ( _DRL_OFF ..  ]
+"163
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 163:   }
+}
+[e :U 27 ]
+"165
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 165:   if (lampFlags.fPOS) {
+[e $ ! != -> . . _lampFlags 0 1 `i -> 0 `i 28  ]
+{
+"166
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 166:     POS_ON();
+[e ( _POS_ON ..  ]
+"167
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 167:   } else {
+}
+[e $U 29  ]
+[e :U 28 ]
+{
+"168
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 168:     POS_OFF();
+[e ( _POS_OFF ..  ]
+"169
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 169:   }
+}
+[e :U 29 ]
+"177
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 177:   if (lampFlags.fHIBEAM) {
+[e $ ! != -> . . _lampFlags 0 3 `i -> 0 `i 30  ]
+{
+"178
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 178:     HiBeam_ON();
+[e ( _HiBeam_ON ..  ]
+"179
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 179:   } else {
+}
+[e $U 31  ]
+[e :U 30 ]
+{
+"180
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 180:     HiBeam_OFF();
+[e ( _HiBeam_OFF ..  ]
+"181
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 181:   }
+}
+[e :U 31 ]
+"194
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 194:   lampFlags_old.all_flags = lampFlags.all_flags;
+[e = . _lampFlags_old 1 . _lampFlags 1 ]
+"195
+[; ;D:\yiming\00work\FR761_RX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 195: }
+[e :UE 11 ]
+}

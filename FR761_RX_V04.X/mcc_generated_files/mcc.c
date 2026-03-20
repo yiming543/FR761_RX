@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Source File
 
-  Company:
+  @Company:
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name:
+    mcc.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary:
+    This is the mcc.c file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
+  @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F15213
         Driver Version    :  2.00
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above or later
+        MPLAB             :  MPLAB X 6.00
 */
 
 /*
@@ -41,49 +44,36 @@
     SOFTWARE.
 */
 
-//20251114 V01 CS:3EFF
-//輸出:HiBeam/DRL/POS
-
-//20251217 V02 CS:C5DF
-//修正接收功能.
-//新增LED OFF信號.
-
-#include "mcc_generated_files/mcc.h"
-#include "mcc_generated_files/LINDrivers/lin_slave.h"
+#include "mcc.h"
 
 
-/*
-                         Main application
- */
-void main(void)
+void SYSTEM_Initialize(void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
-    while (1)
-    {
-        // Add your application code
-        LIN_handler();
-               
-                
-                
-    }
+    PIN_MANAGER_Initialize();
+    OSCILLATOR_Initialize();
+    WDT_Initialize();
+    TMR0_Initialize();
+    EUSART1_Initialize();
+    LIN_Slave_Initialize();
 }
+
+void OSCILLATOR_Initialize(void)
+{
+    // MFOEN disabled; LFOEN disabled; ADOEN disabled; HFOEN disabled; 
+    OSCEN = 0x00;
+    // FRQ 32_MHz; 
+    OSCFRQ = 0x05;
+    // TUN 0; 
+    OSCTUNE = 0x00;
+}
+
+void WDT_Initialize(void)
+{
+    // WDTPS 1:65536; WDTCS LFINTOSC (31 kHz); SWDTEN OFF; 
+    WDTCON = 0x16;
+}
+
 /**
  End of File
 */

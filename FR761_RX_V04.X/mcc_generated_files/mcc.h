@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
 
-  Company:
+  @Company:
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name:
+    mcc.h
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary:
+    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
+  @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F15213
         Driver Version    :  2.00
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above or later
+        MPLAB             :  MPLAB X 6.00
 */
 
 /*
@@ -41,49 +44,60 @@
     SOFTWARE.
 */
 
-//20251114 V01 CS:3EFF
-//輸出:HiBeam/DRL/POS
+#ifndef MCC_H
+#define	MCC_H
+#include <xc.h>
+#include "device_config.h"
+#include "pin_manager.h"
+#include <stdint.h>
+#include <stdbool.h>
+#include <conio.h>
+#include "interrupt_manager.h"
+#include "tmr0.h"
+#include "eusart1.h"
+#include "LINDrivers/lin_app.h"
 
-//20251217 V02 CS:C5DF
-//修正接收功能.
-//新增LED OFF信號.
-
-#include "mcc_generated_files/mcc.h"
-#include "mcc_generated_files/LINDrivers/lin_slave.h"
 
 
-/*
-                         Main application
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the device to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    SYSTEM_Initialize(void);
  */
-void main(void)
-{
-    // initialize the device
-    SYSTEM_Initialize();
+void SYSTEM_Initialize(void);
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the oscillator to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    OSCILLATOR_Initialize(void);
+ */
+void OSCILLATOR_Initialize(void);
+/**
+ * @Param
+    none
+ * @Returns
+    none
+ * @Description
+    Initializes the WDT module to the default states configured in the
+ *                  MCC GUI
+ * @Example
+    WDT_Initialize(void);
+ */
+void WDT_Initialize(void);
 
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
-    while (1)
-    {
-        // Add your application code
-        LIN_handler();
-               
-                
-                
-    }
-}
+#endif	/* MCC_H */
 /**
  End of File
 */
