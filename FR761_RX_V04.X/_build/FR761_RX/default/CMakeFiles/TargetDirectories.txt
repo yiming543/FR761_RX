@@ -1,4 +1,4 @@
-D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default/CMakeFiles/FR761_RX_default_default_XC8_compile.dir
-D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default/CMakeFiles/FR761_RX_default_image_drgY1pXP.dir
-D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default/CMakeFiles/edit_cache.dir
-D:/yiming/00work/FR761_RX_V02.X/_build/FR761_RX/default/CMakeFiles/rebuild_cache.dir
+D:/yiming/04github/FR761_RX/FR761_RX_V04.X/_build/FR761_RX/default/CMakeFiles/FR761_RX_default_default_XC8_compile.dir
+D:/yiming/04github/FR761_RX/FR761_RX_V04.X/_build/FR761_RX/default/CMakeFiles/FR761_RX_default_image_WGl9IAsU.dir
+D:/yiming/04github/FR761_RX/FR761_RX_V04.X/_build/FR761_RX/default/CMakeFiles/edit_cache.dir
+D:/yiming/04github/FR761_RX/FR761_RX_V04.X/_build/FR761_RX/default/CMakeFiles/rebuild_cache.dir

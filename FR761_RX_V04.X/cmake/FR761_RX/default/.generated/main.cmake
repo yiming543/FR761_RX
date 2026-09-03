@@ -29,16 +29,16 @@ endif()
 
 
 # Main target for this project
-add_executable(FR761_RX_default_image_drgY1pXP ${FR761_RX_default_library_list})
+add_executable(FR761_RX_default_image_WGl9IAsU ${FR761_RX_default_library_list})
 
-set_target_properties(FR761_RX_default_image_drgY1pXP PROPERTIES
+set_target_properties(FR761_RX_default_image_WGl9IAsU PROPERTIES
     OUTPUT_NAME "default"
     SUFFIX ".elf"
     ADDITIONAL_CLEAN_FILES "${output_extensions}"
     RUNTIME_OUTPUT_DIRECTORY "${FR761_RX_default_output_dir}")
-target_link_libraries(FR761_RX_default_image_drgY1pXP PRIVATE ${FR761_RX_default_default_XC8_FILE_TYPE_link})
+target_link_libraries(FR761_RX_default_image_WGl9IAsU PRIVATE ${FR761_RX_default_default_XC8_FILE_TYPE_link})
 
 # Add the link options from the rule file.
-FR761_RX_default_link_rule( FR761_RX_default_image_drgY1pXP)
+FR761_RX_default_link_rule( FR761_RX_default_image_WGl9IAsU)
 
 
